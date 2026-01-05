@@ -109,7 +109,7 @@ function update() {
     context.fillText(score, 5, 45);
 
     if (gameOver) {
-        context.fillText("GAME OVER", 5, 90);
+        context.fillText("СОСНУЛ", 5, 90);
     }
 }
 
