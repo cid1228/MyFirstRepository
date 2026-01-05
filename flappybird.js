@@ -63,9 +63,8 @@ window.onload = function() {
     requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
     document.addEventListener("keydown", moveBird);
-    board.addEventListener("pointerdown", (e) => {
-    e.preventDefault();
-    jump();
+    board.addEventListener("pointerdown", moveBird);
+
 });
 
 }
