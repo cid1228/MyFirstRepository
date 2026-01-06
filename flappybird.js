@@ -43,13 +43,13 @@ window.addEventListener("resize", () => {
 
 
 window.onload = function() {
-    board = document.getElementById("board");
-    const ctx = board.getContext("2d");
+    const canvas = document.getElementById("board");
+    const ctx = canvas.getContext("2d");
 
-    board.width = window.innerWidth;
-    board.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-    context = board.getContext("2d"); //used for drawing on the board
+    context = canvas.getContext("2d"); //used for drawing on the board
 
     //draw flappy bird
     // context.fillStyle = "green";
