@@ -4,11 +4,7 @@ body {
 }
 
 #board {
-    /* background-color: skyblue; */
+    background-color: skyblue;
     background-image: url("./flappybirdbg.png");
     
 }
-canvas {
-    touch-action: none;
-}
-
