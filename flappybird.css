@@ -1,10 +1,33 @@
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
+
+    /* 🔒 критично для мобильных и Telegram */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    touch-action: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #board {
+    /* фон из твоего кода */
     background-color: skyblue;
     background-image: url("./flappybirdbg.png");
-    
-}
+    background-size: cover;
+    background-position: center;
+
+    /* canvas на весь экран */
+    display: block;
+    width: 100vw;
+    height: 100vh;
+
+    /* ❌ от*
+
