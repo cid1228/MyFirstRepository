@@ -36,20 +36,17 @@ let gravity = 0.4;
 
 let gameOver = false;
 let score = 0;
-window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
+
 
 
 window.onload = function() {
-    const canvas = document.getElementById("board");
-    const ctx = canvas.getContext("2d");
+    board = document.getElementById("board");
+    const ctx = board.getContext("2d");
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    board.width = window.innerWidth;
+    board.height = window.innerHeight;
 
-    context = canvas.getContext("2d"); //used for drawing on the board
+    context = board.getContext("2d"); //used for drawing on the board
 
     //draw flappy bird
     // context.fillStyle = "green";
@@ -75,9 +72,10 @@ window.onload = function() {
 
 
 }
-
-
-
+window.addEventListener("resize", () => {
+    board.width = window.innerWidth;
+    board.height = window.innerHeight;
+});
 
 function update() {
     requestAnimationFrame(update);
