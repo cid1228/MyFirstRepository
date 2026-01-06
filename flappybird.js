@@ -149,7 +149,7 @@ function placePipes() {
 
 function moveBird(e) {
     if (
-        !e ||                     // тап
+                           // тап
         e.code == "Space" ||
         e.code == "ArrowUp" ||
         e.code == "KeyX"
