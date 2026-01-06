@@ -157,7 +157,7 @@ function moveBird(e) {
         jump()
         }
     }
-}
+
 
 
 function detectCollision(a, b) {
