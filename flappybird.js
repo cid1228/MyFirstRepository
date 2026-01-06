@@ -62,7 +62,7 @@ window.onload = function() {
 
     requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
-    document.addEventListener("keydown", moveBird);
+    document.addEventListener("keydown", moveBird());
 });
 
 }
@@ -149,7 +149,7 @@ function placePipes() {
 
 function moveBird(e) {
     if (
-                           // тап
+        !e ||                   // тап
         e.code == "Space" ||
         e.code == "ArrowUp" ||
         e.code == "KeyX"
